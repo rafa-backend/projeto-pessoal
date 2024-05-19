@@ -1,0 +1,164 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family:'vampiro';
+    src: url('fonts/Vampire Wars.ttf') format('truetype'), url('font/vampire Wars.otf') format('opentype');
+    font-weight: normal;
+    font-size: normal;
+}
+:root{
+    /* Cores dos links */
+--cor1: #1E744E;
+--cor2: #DA0914 ;
+--cor3: #FFFFFF;
+--cor4: #080808 ;
+--cor5: #D1C30A;
+
+/*  CORES DO SITE */
+--cor6: #DADF3D;
+--cor7: #4555CE;
+--cor8:  #D4D6C9;
+
+
+
+--font-padrao: arial, verdana, helvetica, sans-serif;
+--font2: 'Bebas Neue', sans-serif;
+--font-vampiro: 'vampiro', times, serif;
+}
+*{
+    margin:0px;
+    padding:  0px;
+}
+body{
+    background-image: linear-gradient(to bottom, var(--cor6), var(--cor7), var(--cor8));
+}
+a.externo::after{
+    content: '\00A0\1F517';
+ }
+header{
+    box-shadow: -2px 0px 3px rgba(0, 0, 0, 0.274);
+}
+header h1{
+    padding: 1.5em;
+    text-align: center;
+    font-family: var(--font-vampiro);
+    font-weight: normal;
+    font-style: normal;
+  
+}
+header p{
+    text-indent: 30px;
+    font-family: var(--font2);
+
+}
+header a{
+    text-decoration: none;
+    color: var(--cor7);
+}
+header a:hover{
+    background-color: var(--cor8);
+}
+nav{   
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.116);
+    padding: 10px;      
+}
+nav a{
+    color:black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 8px;
+}
+
+nav a.inicio:hover{
+    background-color:white;
+    color: rgb(8, 8, 8);
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.74);
+}
+nav a.sporting:hover{
+    background-color:var(--cor1);
+    color: white;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.74);
+}
+nav a.unitid:hover{
+    background-color: var(--cor2);
+    color: white;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.74);
+    
+}
+nav a.real:hover{
+    background-color: var(--cor3);
+    color: black;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.74);
+    
+}
+nav a.juventus:hover{
+    background-color: var(--cor4);
+    color: white;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.74);
+    
+}
+nav a.nassr:hover{
+    background-color: var(--cor5);
+    color: rgb(17, 17, 17);
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.74);
+    
+}
+main img{
+    max-width: 800px;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+}
+main p {
+    font-family: var(--font2);
+    padding: 10px 10px;
+    font-size: 1.2em;
+}
+div.video{
+    /* background-color: #1E744E; */
+    margin:  0px -21px 30px -21px;
+    padding: 17px 17px; 
+    padding-bottom: 50%;
+    position: relative;
+  
+   
+}
+div.video > iframe{
+    position: absolute;
+    top: 2%;
+    left: 12%;
+    width: 74%;
+    height: 75%;
+    box-shadow: 4px 5px 6px black; 
+    margin: 0px;
+    border-radius: 10px;
+}
+footer{
+    padding-top: 10px;
+    text-align: center;   
+    padding: 10px;
+    background-image: linear-gradient(to left, var(--cor7), var(--cor6));
+    color: var(--cor4);
+    font-weight: bold;
+    font-family: var(--font-padrao);
+}
+footer a{
+    text-decoration: none;
+    font-weight: bold;
+    font-family: var(--font-padrao);
+    color: var(--cor3);
+ 
+    
+}
+footer a:hover{
+    text-decoration: underline;
+    color:var(--cor3);
+    
+}
+.voltar{
+    display: block;
+    text-align: center;
+}
